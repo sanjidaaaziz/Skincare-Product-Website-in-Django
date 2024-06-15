@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>La' Belle</title>
+
+  <title>La' Belle</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background: linear-gradient(to right, #e5dbba, #e7b24f);">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+  <p style="font-family: Didot; text-align: center; font-size: 80px;">About Us</p>
+<p style="text-align:center; color: rgb(0, 0, 0); font-family: Didot; font-size: 30px;" > 
+  A celebration of beauty in everything. An understanding of modern metamorphosis. <br> The idea of beauty is changing in this ever-evolving meta verse. And that’s why, La’ belle.<br>
+  La' belle is an active skincare product website. For our devoted consumers, we are a reliable store. 
+  <br>Our products are imported from numerous well-known manufacturers of cosmetics. <br>
+  Additionally, we provide organic skin care products, which are very advised for preserving your lovely skin.
+  <br>These authentic products are suitable for both male and female. For the past three years, we have broken the rules, <br> never cheated, and brought about change.
+  We currently serve over 50,000 regular clients. <br> 
+  Our commitment to using business as a force for good is stronger than ever right now.
+</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+</html>
